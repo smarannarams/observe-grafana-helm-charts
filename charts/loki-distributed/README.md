@@ -1,6 +1,6 @@
 # loki-distributed
 
-![Version: 0.78.2](https://img.shields.io/badge/Version-0.78.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.9.2](https://img.shields.io/badge/AppVersion-2.9.2-informational?style=flat-square)
+![Version: 0.78.3](https://img.shields.io/badge/Version-0.78.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.9.2](https://img.shields.io/badge/AppVersion-2.9.2-informational?style=flat-square)
 
 Helm chart for Grafana Loki in microservices mode
 
@@ -614,7 +614,7 @@ kubectl delete statefulset RELEASE_NAME-loki-distributed-querier -n LOKI_NAMESPA
 | ruler.tolerations | list | `[]` | Tolerations for ruler pods |
 | runtimeConfig | object | `{}` | Provides a reloadable runtime configuration file for some specific configuration |
 | serviceAccount.annotations | object | `{}` | Annotations for the service account |
-| serviceAccount.automountServiceAccountToken | bool | `true` | Set this toggle to false to opt out of automounting API credentials for the service account |
+| serviceAccount.automountServiceAccountToken | bool | `false` | Set this toggle to false to opt out of automounting API credentials for the service account |
 | serviceAccount.create | bool | `true` | Specifies whether a ServiceAccount should be created |
 | serviceAccount.imagePullSecrets | list | `[]` | Image pull secrets for the service account |
 | serviceAccount.labels | object | `{}` | Labels for the service account |
